@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Pathway Gothic One', sans-serif;
+	*font-family: 'Cookie', cursive;
+	
+
+}
+body{
+background: #222 url("../imgdes/pastor1.jpg") ;
+background-size: cover;
+	color: white;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+
+
+}
+a{  text-decoration: none;
+	color: white;
+}
+.contenedor-menu{
+	width: 1200px;
+	height: 600px;
+	
+	display: flex;
+	padding: 5px;
+	margin: auto;
+	margin-top: 50px;
+	perspective: 1500px;
+}
+
+.pagina-izquierda,
+.pagina-central,
+.pagina-derecha{
+	padding: 10px; 
+	width: 100%;
+	height: 100%;
+}
+
+.pagina-izquierda{
+		background: rgba(0,0,0,0.6);
+	
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#decade', endColorstr='#ededed', GradientType=1 );
+}
+.pagina-central{
+	background: rgba(0,0,0,0.6);
+		
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#decade', endColorstr='#ededed', GradientType=1 );
+}
+.pagina-derecha{
+	background: rgba(0,0,0,0.6);
+	
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#decade', endColorstr='#ededed', GradientType=1 );
+}
+.contenedor-lista{
+	width: 100%;
+	height: 100%;
+}
+
+.lista-uno,
+.lista-dos,
+.lista-tres{
+	width: 100%;
+	text-align: center;
+}
+.lista-uno h1
+{
+	font-size: 24px;
+	text-align: center;
+}
+.lista-uno img
+{
+	width: 350px;
+	height: 350px;
+	border: 2px solid;
+}
+.lista-uno hr,
+.lista-dos hr,
+.lista-tres hr{
+width: 100px;
+height: 3px;
+margin: auto;
+border-style: none;
+
+margin-top: 10px;
+}
+.lista-uno p{
+
+}
+
+/*Aplicando efectos de movimientos*/
+
+.pagina-izquierda{
+	transform: rotateY(180deg);
+	transition: all 1s;
+	transform-origin: right;
+	transform-style: preserve-3d;
+	z-index: 10;
+}
+.pagina-izquierda2{
+	transform: rotateY(0deg);
+}
+
+.lado{
+	backface-visibility: hidden;
+}
+.delante{
+	transform: rotateY(180deg);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	
+}
+.delante img{
+	width: 350px;
+	height: 350px;
+	
+	
+
+	
+}
+.delante h1{
+font-size: 50px;
+text-align: center;
+
+}
+.delante hr{
+	width: 200px;
+	height: 3px;
+	margin: auto;
+	border-style: none;
+	background: -webkit-linear-gradient(left, white,blue,white);
+	margin-top: 10px;
+}
+.delante h2{
+	font-weight: 100;
+	margin-top: 20px;
+}
+.delante button{
+	width: 200px;
+	padding: 8px;
+	background: blue;
+	border-style: none;
+	border-radius: 8px;
+	color: white;
+	margin-top: 10px;
+	transition: all 300ms;
+	cursor: pointer;
+
+}
+.delante button:hover{
+	transform: translateY(10px);
+	box-shadow: 0px -5px 10px 0px #969696;
+
+}
+.delante h3{
+	margin-top: 15px;
+}
+.delante p{
+	margin-top: 10px;
+}
+.delante ul{
+	display: flex;
+	justify-content: center;
+	margin-top: 7px;
+}
+.delante ul h5{
+	font-size: 10px;
+
+}
+.delante ul label{
+	font-size: 10px;
+	margin-top: 4px;
+	margin-left: 10px;
+}
+/*pagina derecha animacion*/
+
+.pagina-derecha{
+	transform: rotateY(-180deg);
+	transform-origin: left;
+	transition:  1s;
+	transform-style: preserve-3d;
+}
+.pagina-derecha2{
+	transform: rotateY(-0deg);
+}
+.lado-pagina-derecha{
+	backface-visibility: hidden;
+
+}
+.pagina-derecha-atras{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateY(180deg);
+	border: 8px double;
+	border-right: none;
+}
+.btn-cerrar{
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	width: 50px;
+	height: 50px;
+	background: rgba(0,0,0,0.8);
+	border-radius: 50%;
+	color: white;
+	text-align: center;
+	line-height: 3;
+	filter: blur(1px);
+	transition: all 300ms;
+	cursor: pointer;
+}
+.btn-cerrar:hover{
+	filter: blur(0px);
+}
+.btn-inicio{
+	width: 200px;
+	padding: 8px;
+	background: blue;
+	border-style: none;
+	border-radius: 8px;
+	color: white;
+	margin-top: 10px;
+	transition: all 300ms;
+	cursor: pointer;
+
+}
+.btn-inicio:hover{
+	transform: translateY(10px);
+	box-shadow: 0px -5px 10px 0px #969696;
+
+}
